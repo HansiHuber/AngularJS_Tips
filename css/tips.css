@@ -1,0 +1,210 @@
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#navigation, #data, #temp {
+    float: left;
+    margin-left: 10px;
+}
+
+#mainTipList {
+    clear: both;
+}
+
+/*-------------------------------------------------------- tiplist - Selection-divs----*/
+.nameSelected {
+    /*background-color: darkgrey;*/
+    font-size: 8pt;
+}
+
+.name2Select {
+    /*background-color: lightgrey;*/
+    font-size: 8pt;
+}
+
+#namesSelectedDiv {
+    border: 1px solid black;
+    overflow: auto;
+    width: 100pt;
+    height: 100px;
+    background-color: #cccccc;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+}
+
+#names2SelectDiv {
+    margin-top: 10px;
+    border: 1px solid black;
+    overflow: auto;
+    width: 100pt;
+    height: 310px;
+    background-color: #cccccc;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+}
+
+.nameTip {
+    float: left;
+}
+
+/*-------------------------------------------------------- tiplist - Selection-divs end-*/
+
+/*--------------------- tipDescrXXX: Daten in Gruppe-, Spiel-, u. Datum-Spalte*/
+.tipDescrSeq
+{
+    text-align:center;
+    font-size:9pt;
+    width:20pt;
+}
+
+.tipDescrGroup
+{
+    text-align:center;
+    font-size:9pt;
+    font-weight: bold;
+    width:45pt;
+}
+
+.tipDescrDate
+{
+    text-align:center;
+    font-size:7pt;
+    font-weight: italic;
+    width:45pt;
+}
+
+.tipDescrMatch
+{
+    text-align:center;
+    font-size:9pt;
+    font-weight: bold;
+    width:45pt;
+}
+
+.tipResult
+{
+    background-color:lightgreen;
+    color: black;
+    width:45pt;
+}
+.tipResultMissing
+{
+    background-color:yellow;
+    width:40pt;
+}
+
+/*--------------------- Tip-Spalte der einzelnen Tipper*/
+td.TippedResult
+{
+    text-align:center;
+    width:60pt;
+}
+td.Tipped3P
+{
+    background-color:red;
+    text-align:center;
+    /*width:40pt;*/
+}
+
+td.Tipped1P
+{
+    background-color:orange;
+    text-align:center;
+    /*width:40pt;*/
+}
+
+td.Tipped0P
+{
+    text-align:center;
+    /*width:40pt;*/
+}
+
+td.TippedError
+{
+    background-color:blue;
+    text-align:center;
+    /*width:40pt;*/
+}
+
+td.TippedMissing
+{
+    background-color:lightgreen;
+    text-align:center;
+    /*width:40pt;*/
+}
+
+td.TippedTeamOut
+{
+    background-color:black;
+    color:white;
+    /*width:40pt;*/
+}
+
+td.TippedTeamCorrect
+{
+    background-color:blue;
+    color:white;
+    /* width:40pt;*/
+}
+
+td.TippedExtraOut
+{
+    background-color:black;
+    color:white;
+    /*width:40pt;*/
+}
+/*-------------------------------------------------------- tiplist - innere table----*/
+.highlightedRow
+{
+    background-color:Gray;
+}
+.tableTipListData .highlightedRow td
+{
+    font-size: 10pt;
+}
+
+.tableTipListData tr.tipResultFirstGroupRow
+{
+    border-top-color:Black;
+    border-top-style:solid;
+    border-top-width:2pt;
+}
+
+.tableTipListData
+{
+    border-collapse:collapse;
+    border-width:2pt;
+    border-color:Black;
+    border-style:solid;
+}
+
+.tableTipListData td
+{
+    text-align:center;
+    font-size:7pt;
+    /*width:60pt;*/
+    border-collapse:collapse;
+    border-width:thin;
+    border-color:Gray;
+    border-style:solid;
+}
+.tableTipListData th
+{
+    text-align:center;
+    font-size:9pt;
+    font-weight: bold;
+    /*width:60pt;*/
+    border-collapse:collapse;
+    border-width:thin;
+    border-color:Gray;
+    border-style:solid;
+}
