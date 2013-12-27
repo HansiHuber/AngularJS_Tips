@@ -26,11 +26,22 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="17" selection-start="4272" selection-end="4272" vertical-scroll-proportion="-4.0784316" vertical-offset="285" max-vertical-offset="1105">
+            <state line="113" column="84" selection-start="4366" selection-end="4381" vertical-scroll-proportion="-5.7843137" vertical-offset="997" max-vertical-offset="1955">
               <folding>
                 <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#1;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#2;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#3;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tips.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/tips.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.48594847" vertical-offset="163" max-vertical-offset="3808">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,15 +61,6 @@
         <entry file="file://$PROJECT_DIR$/css/tips.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="93" column="1" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="3672">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tips.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/tips.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="0" selection-start="7012" selection-end="7012" vertical-scroll-proportion="0.88056207" vertical-offset="2461" max-vertical-offset="3315">
               <folding />
             </state>
           </provider>
@@ -341,7 +343,9 @@
         <state line="26" column="0" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1972">
           <folding>
             <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#1;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#2;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#3;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -442,17 +446,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="17" selection-start="4272" selection-end="4272" vertical-scroll-proportion="-4.0784316" vertical-offset="285" max-vertical-offset="1105">
+        <state line="113" column="84" selection-start="4366" selection-end="4381" vertical-scroll-proportion="-5.7843137" vertical-offset="997" max-vertical-offset="1955">
           <folding>
             <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#1;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#2;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#3;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/tips.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="0" selection-start="7012" selection-end="7012" vertical-scroll-proportion="0.88056207" vertical-offset="2461" max-vertical-offset="3315">
+        <state line="34" column="0" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.48594847" vertical-offset="163" max-vertical-offset="3808">
           <folding />
         </state>
       </provider>

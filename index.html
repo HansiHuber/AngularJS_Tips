@@ -43,11 +43,21 @@
     <div id="data">
         <table class="nameTip tableTipListData">
             <tr>
-                <th ng-click="setSorter('Seq')"><div>#<img src="{{sortIcon['Seq']}}"/></div></th>
-                <th ng-click="setSorter('Gruppe')"><div>Gruppe<img src="{{sortIcon['Gruppe']}}"/></div></th>
-                <th ng-click="setSorter('Datum')"><div>Datum<img src="{{sortIcon['Datum']}}"/></div></th>
-                <th ng-click="setSorter('TeamA')"><div>Spiel<img src="{{sortIcon['TeamA']}}"/></div></th>
-                <th ng-click="setSorter('Shot')"><div>Ergebnis<img src="{{sortIcon['Shot']}}"/></div></th>
+                <th ng-click="setSorter('Seq')">
+                    <div>#<img src="{{sortIcon['Seq']}}"/></div>
+                </th>
+                <th ng-click="setSorter('Gruppe')">
+                    <div>Gruppe<img src="{{sortIcon['Gruppe']}}"/></div>
+                </th>
+                <th ng-click="setSorter('Datum')">
+                    <div>Datum<img src="{{sortIcon['Datum']}}"/></div>
+                </th>
+                <th ng-click="setSorter('TeamA')">
+                    <div>Spiel<img src="{{sortIcon['TeamA']}}"/></div>
+                </th>
+                <th ng-click="setSorter('Shot')">
+                    <div>Ergebnis<img src="{{sortIcon['Shot']}}"/></div>
+                </th>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -71,13 +81,14 @@
                 <td>Tendenz</td>
             </tr>
             <tr ng-repeat="match in matches | filter:filterMatches | orderBy:sortCol | storeSequence:this">
-                <td class="tipDescrSeq" >{{match.Seq}}</td>
+                <td class="tipDescrSeq">{{match.Seq}}</td>
                 <td class="tipDescrGroup" ng-click="showOnlyGroup(match)">{{match.Gruppe}}</td>
                 <td class="tipDescrDate" ng-click="showOnlyDate(match)">{{match.DatumString}}</td>
-                <td class="tipDescrMatch" ng-class="{highlight:doHighlight($index)}">{{match.TeamA}} - {{match.TeamB}}</td>
+                <td class="tipDescrMatch" ng-class="{highlight:doHighlight($index)}">{{match.TeamA}} - {{match.TeamB}}
+                </td>
                 <td ng-class="styleResultClass(match)">{{match.Shot}}:{{match.Received}}</td>
             </tr>
-            <tr ng-repeat ="semi in semis">
+            <tr ng-repeat="semi in semis">
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>Semi{{$index+1}}</td>
@@ -91,7 +102,7 @@
                 <td>{{champ.DatumString}}</td>
                 <td>{{champ.Name}}</td>
             </tr>
-            <tr ng-repeat ="extra in extras">
+            <tr ng-repeat="extra in extras">
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>{{extra.Name}}</td>
@@ -114,7 +125,7 @@
                 <td>{{tipper.Tendency}}</td>
             </tr>
             <tr ng-repeat="tip in tipper.Tips | orderAndFilterTips:this">
-                <td ng-class="styleTipResultClass(tip)">{{tip.Shot}}:{{tip.Received}}</td>
+                <td tip-result tip-object="{{tip}}"></td>
             </tr>
             <tr ng-repeat="semi in tipper.Semis">
                 <td ng-class="styleTipSemiCorrectClass(semi)">{{semi}}</td>

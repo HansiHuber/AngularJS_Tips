@@ -4,7 +4,8 @@
 var tipApp = angular.module('tipApp', [
     'tipControllers',
     'tipServices',
-    'tipFilters'
+    'tipFilters',
+    'tipDirectives'
 ]);
 
 //------------------------------------------------------------------- Controller
@@ -28,6 +29,12 @@ tipControllers.controller('tipController', ['$scope', '$http', 'Tips',
                 $scope.done = "Data loaded";
                 $scope.nrMatches = $scope.matches.length;
                 $scope.maxSeq = $scope.tippers[0].Tips.length;
+                $scope.$watch('maxSeq', function (newValue, oldValue, scope) {
+                    var curr = angular.copy(scope.tippersSelected);
+                    scope.tippersSelected = [];
+                    scope.tippersSelected = curr;
+                 });
+                $scope.maxSeq = 20;// <=====================================================
                 for (var i = 0; i < $scope.matches.length; i++) {
                     var match = $scope.matches[i];
                     //console.log(match.TeamA + ' - ' + match.TeamB);
@@ -134,7 +141,7 @@ tipControllers.controller('tipController', ['$scope', '$http', 'Tips',
             var clazz = '';
             angular.forEach($scope.semis, function (item) {
                 if (item.Name == team) {
-                    clazz= 'TippedTeamCorrect';
+                    clazz = 'TippedTeamCorrect';
                 }
             });
             return clazz;
@@ -184,6 +191,28 @@ tipFilters.filter('orderAndFilterTips', function () {
         //});
         //if (reverse) filtered.reverse();
         return filtered;
+    };
+});
+
+//------------------------------------------------------------------- Directives
+var tipDirectives = angular.module('tipDirectives', []);
+
+tipDirectives.directive('tipResult', function () {
+    return{
+        link: function (scope, element, attrs, controller) {
+            var tip = scope.$eval(attrs.tipObject);
+            var sResult = tip.Shot + ':' + tip.Received;
+            var clazz = '';
+            if (tip.Seq > scope.maxSeq) {
+                sResult = '';
+            }
+            else {
+                if (tip.OkExact) clazz = 'Tipped3P';
+                if (tip.Ok12X && !tip.OkExact) clazz = 'Tipped1P';
+            }
+            element[0].innerHTML = sResult;
+            element[0].className = 'TippedResult ' + clazz;
+        }
     };
 });
 
