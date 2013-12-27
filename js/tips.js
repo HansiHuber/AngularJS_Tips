@@ -216,3 +216,22 @@ tipDirectives.directive('tipResult', function () {
     };
 });
 
+tipDirectives.directive('tipTendency', function () {
+    return{
+        link: function (scope, element, attrs, controller) {
+            var tendencyVal = scope.$eval(attrs.tendencyVal);
+            var direction='right';
+            switch(tendencyVal)
+            {
+                case -2: direction='down';break;
+                case -1: direction='down_middle';break;
+                case 0: direction='right';break;
+                case 1: direction='up_middle';break;
+                case 2: direction='up';break;
+            }
+            var sFileName = 'arrow_' + direction + '.png';
+            element[0].innerHTML = '<div><img src="img/' +sFileName + '"/></div>';
+        }
+    };
+});
+

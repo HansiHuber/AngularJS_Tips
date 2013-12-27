@@ -7,9 +7,12 @@
 @tableHeaderColor: rgba(200, 200, 200, 0.4);
 @navigationDivColor: @tableHeaderColor;
 
-.tipDataCell(@width:45px,@style:normal) {
+.tipDataCellSimple() {
   text-align: center;
   font-size: @fontSize;
+}
+.tipDataCell(@width:45px,@style:normal) {
+  .tipDataCellSimple();
   font-weight: @style;
   font-style: @style;
   width: @width;
@@ -66,6 +69,7 @@
   width: (@tipColWidth*12);
 
   th {
+    .tipDataCellSimple();
     height: @tipHeaderCellHeight;
     background-color: @tableHeaderColor;
     div{
@@ -75,7 +79,13 @@
     }
   }
   td {
+    .tipDataCellSimple();
     height: @tipDataCellHeight;
+    div{
+      width:100%;
+      height:100%;
+      overflow:hidden;
+    }
   }
   .tipDescrSeq {
     .tipDataCell(20px);
@@ -86,7 +96,7 @@
   }
 
   .tipDescrDate {
-    .tipDataCell(@tipColWidth, italic);
+    .tipDataCell(60px, italic);
   }
 
   .tipDescrMatch {
@@ -102,6 +112,26 @@
     .tipDataCell(60px);
     background-color: yellow;
   }
+  //.tableTipListData td {
+  //  text-align: center;
+  //  font-size: 7pt;
+  //  /*width:60pt;*/
+  //  border-collapse: collapse;
+  //  border-width: thin;
+  //  border-color: Gray;
+  //  border-style: solid;
+  //}
+  //
+  //.tableTipListData th {
+  //  text-align: center;
+  //  font-size: 9pt;
+  //  font-weight: bold;
+  //  /*width:60pt;*/
+  //  border-collapse: collapse;
+  //  border-width: thin;
+  //  border-color: Gray;
+  //  border-style: solid;
+  //}
 }
 
 /*--------------------- Tip-Spalte der einzelnen Tipper*/
@@ -154,44 +184,24 @@
 }
 
 /*-------------------------------------------------------- tiplist - innere table----*/
-.highlightedRow {
-  background-color: Gray;
-}
+//.highlightedRow {
+//  background-color: Gray;
+//}
+//
+//.tableTipListData .highlightedRow td {
+//  font-size: 10pt;
+//}
+//
+//.tableTipListData tr.tipResultFirstGroupRow {
+//  border-top-color: Black;
+//  border-top-style: solid;
+//  border-top-width: 2pt;
+//}
+//
+//.tableTipListData {
+//  border-collapse: collapse;
+//  border-width: 2pt;
+//  border-color: Black;
+//  border-style: solid;
+//}
 
-.tableTipListData .highlightedRow td {
-  font-size: 10pt;
-}
-
-.tableTipListData tr.tipResultFirstGroupRow {
-  border-top-color: Black;
-  border-top-style: solid;
-  border-top-width: 2pt;
-}
-
-.tableTipListData {
-  border-collapse: collapse;
-  border-width: 2pt;
-  border-color: Black;
-  border-style: solid;
-}
-
-.tableTipListData td {
-  text-align: center;
-  font-size: 7pt;
-  /*width:60pt;*/
-  border-collapse: collapse;
-  border-width: thin;
-  border-color: Gray;
-  border-style: solid;
-}
-
-.tableTipListData th {
-  text-align: center;
-  font-size: 9pt;
-  font-weight: bold;
-  /*width:60pt;*/
-  border-collapse: collapse;
-  border-width: thin;
-  border-color: Gray;
-  border-style: solid;
-}

@@ -122,7 +122,8 @@
                 <td>{{tipper.Points}}</td>
             </tr>
             <tr>
-                <td>{{tipper.Tendency}}</td>
+                <!--<td>{{tipper.Tendency}}</td>-->
+                <td data-tip-tendency data-tendency-val="{{tipper.Tendency}}"></td>
             </tr>
             <tr ng-repeat="tip in tipper.Tips | orderAndFilterTips:this">
                 <td tip-result tip-object="{{tip}}"></td>
