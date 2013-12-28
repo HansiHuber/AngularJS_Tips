@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
     $('body').keydown(keyPressed);
+    //initChartLine();
 });
 function keyPressed(event) {
     var keyCode = event.keyCode;
@@ -23,6 +24,56 @@ function keyPressed(event) {
     scope.$apply(function () {
         scope.maxSeq = seq;
     })
+}
+
+function initChartLine(values) {
+    var labels = ["RobertG"];
+//    var values = [
+//        [60, 71, 57, 55, 55, 44, 31, 65, 31, 25, 12, 3, 4, 4, 4, 6, 2, 1, 1],
+//        [60, 50, 43, 32, 32, 31, 27, 27, 25, 22, 18, 13, 14, 47, 40, 36, 32, 21, 11]
+//    ];
+    var yMax = 120;
+    var yNrLines = 12;
+    var fontSizeLabels = 8;
+    var lineWidth = 3;
+    var offsetChartLeft = 30;
+    var barLine = new RGraph.Line('lineRankHist', values)
+        //.Set('labels.above', true)
+        .Set('labels.above.size', fontSizeLabels)
+        .Set('text.color', 'black')
+        .Set('strokestyle', 'white')
+        .Set('linewidth', lineWidth)
+        .Set('gutter.left', offsetChartLeft)
+        .Set('background.grid.hlines', true)
+        .Set('background.grid.vlines', false)
+        .Set('hmargin', 0)
+        .Set('ymax', yMax)
+        .Set('background.grid.autofit.numhlines', yNrLines)
+        .Set('ylabels.count', yNrLines)
+        .Set('numyticks', yNrLines)
+        .Set('background.grid.color', '#bbb')
+        .Set('colors', ['red', 'blue','green','orange'])
+        .Draw();
+}
+
+function updateRankHistory4Chart(scope) {
+    var nrLines = scope.tippersSelected.length;
+    var values = [];
+    angular.forEach(scope.tippersSelected, function (tipper) {
+        var line = [];
+        var history = tipper.History;
+        angular.forEach(tipper.History, function (data) {
+            line.push(data.R);
+        });
+        try {
+            values.push(line);
+        }
+        catch (exc) {
+            console.log(exc.message);
+        }
+    });
+    var nrCharts = values.length;
+    initChartLine(values);
 }
 
 //------------------------------------------------------------------- App
@@ -149,6 +200,7 @@ tipControllers.controller('tipController', ['$scope', '$http', 'Tips',
             if (idx >= 0) {
                 $scope.tippers.splice(idx, 1);
             }
+            updateRankHistory4Chart($scope);
         }
         $scope.tipperUnselected = function (tipper) {
             $scope.tippers.push(tipper);
@@ -156,6 +208,7 @@ tipControllers.controller('tipController', ['$scope', '$http', 'Tips',
             if (idx >= 0) {
                 $scope.tippersSelected.splice(idx, 1);
             }
+            updateRankHistory4Chart($scope);
         }
 
         $scope.searchName = '';

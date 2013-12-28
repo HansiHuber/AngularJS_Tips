@@ -7,6 +7,15 @@
     <link rel="stylesheet/less" href="css/tips.less">
     <script src="js/less-1.5.0.min.js" type="text/javascript"></script>
     <script src="js/jquery/jquery-1.10.2.js"></script>
+
+    <script src="js/rgraph/libraries/RGraph.common.core.js" ></script>
+    <script src="js/rgraph/libraries/RGraph.common.dynamic.js" ></script>
+    <script src="js/rgraph/libraries/RGraph.common.tooltips.js" ></script>
+    <script src="js/rgraph/libraries/RGraph.line.js" ></script>
+    <script src="js/rgraph/libraries/RGraph.common.key.js" ></script>
+    <script src="js/rgraph/libraries/RGraph.common.effects.js" ></script>
+    <!--[if lt IE 9]><script src="js/rgraph/excanvas/excanvas.js"></script><![endif]-->
+
     <script src="js/angular/angular.js"></script>
     <script src="js/angular/angular-resource.js"></script>
     <script src="js/tips.js"></script>
@@ -20,6 +29,9 @@
         Mit Links- bzw. Rechts-Tasten Spielrunde ändern. <br>
         Done: {{done}} - {{nrMatches}} Spiele
         <input type="text" ng-model="maxSeq"/>
+    </div>
+    <div id="tipDataChart">
+        <canvas id="lineRankHist" width="600" height="300">Canvas not supported by Browser</canvas>
     </div>
     <div id="matchSelector">
         <span ng-repeat="seq in matchSequence"

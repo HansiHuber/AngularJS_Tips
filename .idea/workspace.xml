@@ -23,23 +23,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="56" selection-start="776" selection-end="776" vertical-scroll-proportion="0.4022416" vertical-offset="0" max-vertical-offset="2482">
+            <state line="60" column="0" selection-start="1118" selection-end="2466" vertical-scroll-proportion="-8.346154" vertical-offset="276" max-vertical-offset="1207">
               <folding>
-                <element signature="tag#tr#2;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#tr#3;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#head#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#table#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#2;tag#table#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#3;tag#table#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tips.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tips.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/tips.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="9" selection-start="478" selection-end="478" vertical-scroll-proportion="-13.6" vertical-offset="0" max-vertical-offset="4913">
-              <folding />
+            <state line="43" column="36" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.31695905" vertical-offset="120" max-vertical-offset="5474">
+              <folding>
+                <element signature="n#!!block;n#keyPressed#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,10 +54,8 @@
       <file leaf-file-name="tips.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/tips.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3179">
-              <folding>
-                <element signature="e#2934#3600#0" expanded="false" />
-              </folding>
+            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3961">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,13 +63,11 @@
       <file leaf-file-name="tipdata_formatted.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tipdata_formatted.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="0" selection-start="4392" selection-end="4392" vertical-scroll-proportion="-7.1153846" vertical-offset="2926" max-vertical-offset="662490">
+            <state line="184" column="0" selection-start="4330" selection-end="4392" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="660314">
               <folding>
+                <element signature="e#70#4109#0" expanded="false" />
                 <element signature="e#4128#4236#0" expanded="false" />
-                <element signature="e#840299#840629#0" expanded="false" />
-                <element signature="e#840645#840905#0" expanded="false" />
-                <element signature="n#!!block;n#Champ#0;n#!!top" expanded="false" />
-                <element signature="e#841001#841130#0" expanded="false" />
+                <element signature="e#4348#4390#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -84,15 +87,15 @@
         <option value="$PROJECT_DIR$/css/tips.css" />
         <option value="$PROJECT_DIR$/css/tips.less" />
         <option value="$PROJECT_DIR$/tipdata_formatted.json" />
-        <option value="$PROJECT_DIR$/js/tips.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/tips.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="950" />
     <option name="width" value="969" />
-    <option name="height" value="1050" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -148,7 +151,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,24 +185,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="Errors" />
-    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="X:/HTML5_RGraph" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -211,15 +207,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -278,13 +282,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="950" y="0" width="969" height="1050" extended-state="0" />
+    <frame x="950" y="0" width="969" height="1051" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.043673012" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.2474804" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="750" y="788" width="1142" height="294" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1655914" sideWeight="0.95632696" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -295,6 +298,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.2474804" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="750" y="788" width="1142" height="294" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -316,11 +320,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="208" column="16" selection-start="5027" selection-end="5033" vertical-scroll-proportion="0.0" vertical-offset="3536" max-vertical-offset="420767">
           <folding>
+            <element signature="e#70#4109#0" expanded="false" />
             <element signature="e#4128#4236#0" expanded="false" />
-            <element signature="e#840299#840629#0" expanded="false" />
-            <element signature="e#840645#840905#0" expanded="false" />
-            <element signature="n#!!block;n#Champ#0;n#!!top" expanded="false" />
-            <element signature="e#841001#841130#0" expanded="false" />
+            <element signature="e#4348#4390#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -329,8 +331,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1972">
           <folding>
-            <element signature="tag#tr#2;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#tr#3;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#head#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#table#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#2;tag#table#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#3;tag#table#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -338,33 +345,29 @@
     <entry file="file://$PROJECT_DIR$/js/tips.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="42" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="2754">
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#keyPressed#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/tips.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425">
-          <folding />
-        </state>
+        <state line="18" column="23" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tipdata.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="225780" selection-start="225780" selection-end="229204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <folding />
-        </state>
+        <state line="0" column="225780" selection-start="225780" selection-end="229204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tipdata_formatted.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="420767">
           <folding>
+            <element signature="e#70#4109#0" expanded="false" />
             <element signature="e#4128#4236#0" expanded="false" />
-            <element signature="e#840299#840629#0" expanded="false" />
-            <element signature="e#840645#840905#0" expanded="false" />
-            <element signature="n#!!block;n#Champ#0;n#!!top" expanded="false" />
-            <element signature="e#841001#841130#0" expanded="false" />
+            <element signature="e#4348#4390#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -386,60 +389,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tipdata.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="225780" selection-start="225780" selection-end="225870" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-          <folding />
-        </state>
+        <state line="0" column="225780" selection-start="225780" selection-end="225870" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
     <entry file="file://C:/Program Files (x86)/Git/doc/git/html/git-config.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100096">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100096" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/tips.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="1" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3672">
-          <folding />
-        </state>
+        <state line="93" column="1" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3672" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/tips.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3179">
-          <folding>
-            <element signature="e#2934#3600#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tipdata_formatted.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="0" selection-start="4392" selection-end="4392" vertical-scroll-proportion="-7.1153846" vertical-offset="2926" max-vertical-offset="662490">
-          <folding>
-            <element signature="e#4128#4236#0" expanded="false" />
-            <element signature="e#840299#840629#0" expanded="false" />
-            <element signature="e#840645#840905#0" expanded="false" />
-            <element signature="n#!!block;n#Champ#0;n#!!top" expanded="false" />
-            <element signature="e#841001#841130#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tips.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="478" selection-end="478" vertical-scroll-proportion="-13.6" vertical-offset="0" max-vertical-offset="4913">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="56" selection-start="776" selection-end="776" vertical-scroll-proportion="0.4022416" vertical-offset="0" max-vertical-offset="2482">
+        <state line="60" column="0" selection-start="1118" selection-end="2466" vertical-scroll-proportion="-8.346154" vertical-offset="276" max-vertical-offset="1207">
           <folding>
-            <element signature="tag#tr#2;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#tr#3;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#head#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#table#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#2;tag#table#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#3;tag#table#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipdata_formatted.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="0" selection-start="4330" selection-end="4392" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="660314">
+          <folding>
+            <element signature="e#70#4109#0" expanded="false" />
+            <element signature="e#4128#4236#0" expanded="false" />
+            <element signature="e#4348#4390#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tips.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="36" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.31695905" vertical-offset="120" max-vertical-offset="5474">
+          <folding>
+            <element signature="n#!!block;n#keyPressed#0" expanded="false" />
           </folding>
         </state>
       </provider>
