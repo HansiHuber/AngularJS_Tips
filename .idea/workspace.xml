@@ -26,12 +26,10 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1622" selection-end="1746" vertical-scroll-proportion="-1.882353" vertical-offset="329" max-vertical-offset="1972">
+            <state line="24" column="39" selection-start="931" selection-end="945" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="2482">
               <folding>
-                <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#tr#1;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#tr#2;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#tr#3;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#2;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#3;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -40,7 +38,7 @@
       <file leaf-file-name="tips.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tips.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="232" column="80" selection-start="8833" selection-end="8833" vertical-scroll-proportion="0.0" vertical-offset="3277" max-vertical-offset="4131">
+            <state line="49" column="18" selection-start="1871" selection-end="1871" vertical-scroll-proportion="-22.6" vertical-offset="268" max-vertical-offset="4352">
               <folding />
             </state>
           </provider>
@@ -49,20 +47,10 @@
       <file leaf-file-name="tips.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/tips.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="0" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.7916667" vertical-offset="561" max-vertical-offset="2550">
+            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3179">
               <folding>
-                <element signature="e#811#1105#0" expanded="false" />
-                <element signature="e#2598#3264#0" expanded="false" />
+                <element signature="e#2934#3600#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tips.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/tips.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="1" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="3672">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -70,8 +58,9 @@
       <file leaf-file-name="tipdata_formatted.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tipdata_formatted.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="54" selection-end="594189" vertical-scroll-proportion="-2.5384614" vertical-offset="2" max-vertical-offset="410193">
+            <state line="1" column="13" selection-start="15" selection-end="15" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="816">
               <folding>
+                <element signature="e#15#588857#0" expanded="false" />
                 <element signature="e#70#4796#0" expanded="false" />
                 <element signature="e#4815#4923#0" expanded="false" />
                 <element signature="e#5138#9869#0" expanded="false" />
@@ -96,8 +85,8 @@
         <option value="$PROJECT_DIR$/js/tiplist.js" />
         <option value="$PROJECT_DIR$/tipdata_formatted.json" />
         <option value="$PROJECT_DIR$/css/tips.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/tips.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/tips.less" />
       </list>
     </option>
@@ -329,6 +318,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="208" column="16" selection-start="5027" selection-end="5033" vertical-scroll-proportion="0.0" vertical-offset="3536" max-vertical-offset="420767">
           <folding>
+            <element signature="e#15#588857#0" expanded="false" />
             <element signature="e#70#4796#0" expanded="false" />
             <element signature="e#4815#4923#0" expanded="false" />
             <element signature="e#5138#9869#0" expanded="false" />
@@ -343,10 +333,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1972">
           <folding>
-            <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#tr#1;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#tr#2;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#tr#3;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#2;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#3;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -376,6 +364,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="420767">
           <folding>
+            <element signature="e#15#588857#0" expanded="false" />
             <element signature="e#70#4796#0" expanded="false" />
             <element signature="e#4815#4923#0" expanded="false" />
             <element signature="e#5138#9869#0" expanded="false" />
@@ -424,8 +413,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tipdata_formatted.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="54" selection-end="594189" vertical-scroll-proportion="-2.5384614" vertical-offset="2" max-vertical-offset="410193">
+        <state line="1" column="13" selection-start="15" selection-end="15" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="816">
           <folding>
+            <element signature="e#15#588857#0" expanded="false" />
             <element signature="e#70#4796#0" expanded="false" />
             <element signature="e#4815#4923#0" expanded="false" />
             <element signature="e#5138#9869#0" expanded="false" />
@@ -436,31 +426,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/tips.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1622" selection-end="1746" vertical-scroll-proportion="-1.882353" vertical-offset="329" max-vertical-offset="1972">
-          <folding>
-            <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#tr#1;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#tr#2;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#tr#3;tag#table#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state line="49" column="18" selection-start="1871" selection-end="1871" vertical-scroll-proportion="-22.6" vertical-offset="268" max-vertical-offset="4352">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/tips.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="80" selection-start="8833" selection-end="8833" vertical-scroll-proportion="0.0" vertical-offset="3277" max-vertical-offset="4131">
-          <folding />
+        <state line="24" column="39" selection-start="931" selection-end="945" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="2482">
+          <folding>
+            <element signature="tag#tr#2;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#3;tag#table#0;tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/tips.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.7916667" vertical-offset="561" max-vertical-offset="2550">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3179">
           <folding>
-            <element signature="e#811#1105#0" expanded="false" />
-            <element signature="e#2598#3264#0" expanded="false" />
+            <element signature="e#2934#3600#0" expanded="false" />
           </folding>
         </state>
       </provider>

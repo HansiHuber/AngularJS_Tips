@@ -28,13 +28,26 @@ tipControllers.controller('tipController', ['$scope', '$http', 'Tips',
                 $scope.teamsOut = data.TeamsOut;
                 $scope.done = "Data loaded";
                 $scope.nrMatches = $scope.matches.length;
+                var nrs = [];
+                for(var i=1;i<=$scope.nrMatches;i++)
+                {
+                    nrs.push(i);
+                }
+                $scope.matchSequence=nrs;
+                var nr = 0;
+                angular.forEach($scope.matches, function (match) {
+                    if (match.Shot>=0) {
+                        nr++;
+                    }
+                });
+                $scope.nrMatchesPlayed=nr;
                 $scope.maxSeq = $scope.tippers[0].Tips.length;
                 $scope.$watch('maxSeq', function (newValue, oldValue, scope) {
                     var curr = angular.copy(scope.tippersSelected);
                     scope.tippersSelected = [];
                     scope.tippersSelected = curr;
                  });
-                $scope.maxSeq = 20;// <=====================================================
+                //$scope.maxSeq = 20;// <=====================================================
                 for (var i = 0; i < $scope.matches.length; i++) {
                     var match = $scope.matches[i];
                     //console.log(match.TeamA + ' - ' + match.TeamB);
