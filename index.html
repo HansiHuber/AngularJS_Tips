@@ -121,14 +121,13 @@
                 <th>{{tipper.Name}}</th>
             </tr>
             <tr>
-                <td>{{tipper.Rank}}.</td>
+                <td>{{tipper.History[maxSeq-1].R}}.</td>
             </tr>
             <tr>
-                <td>{{tipper.Points}}</td>
+                <td>{{tipper.History[maxSeq-1].P}}</td>
             </tr>
             <tr>
-                <!--<td>{{tipper.Tendency}}</td>-->
-                <td data-tip-tendency data-tendency-val="{{tipper.Tendency}}"></td>
+                <td data-tip-tendency data-tendency-val="{{tipper.History[maxSeq-1].T}}"></td>
             </tr>
             <tr ng-repeat="tip in tipper.Tips | orderAndFilterTips:this">
                 <td tip-result tip-object="{{tip}}"></td>
