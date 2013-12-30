@@ -12,6 +12,7 @@
     <script src="js/rgraph/libraries/RGraph.common.dynamic.js" ></script>
     <script src="js/rgraph/libraries/RGraph.common.tooltips.js" ></script>
     <script src="js/rgraph/libraries/RGraph.line.js" ></script>
+    <script src="js/rgraph/libraries/RGraph.scatter.js" ></script>
     <script src="js/rgraph/libraries/RGraph.common.key.js" ></script>
     <script src="js/rgraph/libraries/RGraph.common.effects.js" ></script>
     <!--[if lt IE 9]><script src="js/rgraph/excanvas/excanvas.js"></script><![endif]-->
@@ -109,22 +110,22 @@
             <tr ng-repeat="semi in semis">
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>Semi{{$index+1}}</td>
                 <td>{{semi.DatumString}}</td>
+                <td>Semi{{$index+1}}</td>
                 <td>{{semi.Name}}</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>Champ</td>
                 <td>{{champ.DatumString}}</td>
+                <td>Champ</td>
                 <td>{{champ.Name}}</td>
-            </tr>
+             </tr>
             <tr ng-repeat="extra in extras">
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>{{extra.Name}}</td>
                 <td>&nbsp;</td>
+                <td>{{extra.Name}}</td>
                 <td>{{extra.Val}}</td>
             </tr>
         </table>

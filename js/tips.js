@@ -1,8 +1,10 @@
 'use strict';
 
+var chartTipRanks;
+
 $(document).ready(function () {
     $('body').keydown(keyPressed);
-    //initChartLine();
+    chartTipRanks = initChartScatter();
 });
 function keyPressed(event) {
     var keyCode = event.keyCode;
@@ -26,8 +28,9 @@ function keyPressed(event) {
     })
 }
 
-function initChartLine(values) {
+function initChartLine() {
     var labels = ["RobertG"];
+    var values = [];
 //    var values = [
 //        [60, 71, 57, 55, 55, 44, 31, 65, 31, 25, 12, 3, 4, 4, 4, 6, 2, 1, 1],
 //        [60, 50, 43, 32, 32, 31, 27, 27, 25, 22, 18, 13, 14, 47, 40, 36, 32, 21, 11]
@@ -52,18 +55,62 @@ function initChartLine(values) {
         .Set('ylabels.count', yNrLines)
         .Set('numyticks', yNrLines)
         .Set('background.grid.color', '#bbb')
-        .Set('colors', ['red', 'blue','green','orange'])
+        .Set('colors', ['red', 'blue', 'green', 'orange'])
         .Draw();
+    return barLine;
+}
+function initChartScatter() {
+    var labels = ["RobertG"];
+    var values = [];
+//    var values = [
+//        [[0,60,'red'],[1,65,'red'],[2,71,'red'],[3,57,'red'],[4,55,'red'],[5,44,'red'],[6,25,'red']],
+//        [[0,60,'red'],[1,55,'blue'],[2,50,'blue'],[3,43,'blue'],[4,32,'blue'],[5,27,'blue'],[6,12,'blue']]
+//    ];
+    var yMax = 120;
+    var yNrLines = 12;
+    var fontSizeLabels = 8;
+    var lineWidth = 3;
+    var offsetChartLeft = 30;
+    var xNrTicks = 48;
+    var barLine = new RGraph.Scatter('lineRankHist', values)
+        .Set('chart.line', true)
+        //.Set('labels.above', true)
+        .Set('labels.above.size', fontSizeLabels)
+        .Set('text.color', 'black')
+        .Set('strokestyle', 'white')
+        .Set('line.linewidth', lineWidth)
+        .Set('gutter.left', offsetChartLeft)
+        .Set('background.grid.hlines', true)
+        .Set('background.grid.vlines', false)
+        .Set('hmargin', 0)
+        .Set('xmax', 50)
+        .Set('ymax', yMax)
+        .Set('background.grid.autofit.numhlines', yNrLines)
+        .Set('ylabels.count', yNrLines)
+        .Set('numyticks', yNrLines)
+        .Set('numxticks', xNrTicks)
+        .Set('tickmarks', null)
+        .Set('background.grid.color', '#bbb')
+        //.Set('colors', ['red', 'blue'])
+        .Draw();
+    return barLine;
 }
 
-function updateRankHistory4Chart(scope) {
+function redrawChartLine(values) {
+    chartTipRanks.original_data = values;
+    RGraph.Redraw();
+}
+
+function updateRankHistory4ChartLine(scope) {
     var nrLines = scope.tippersSelected.length;
     var values = [];
     angular.forEach(scope.tippersSelected, function (tipper) {
         var line = [];
         var history = tipper.History;
+        var i = 0;
         angular.forEach(tipper.History, function (data) {
-            line.push(data.R);
+            if (i < scope.maxSeq) line.push(data.R);
+            i++;
         });
         try {
             values.push(line);
@@ -73,7 +120,43 @@ function updateRankHistory4Chart(scope) {
         }
     });
     var nrCharts = values.length;
-    initChartLine(values);
+    redrawChartLine(values);
+}
+
+function redrawChartScatter(values) {
+    RGraph.Clear(document.getElementById('lineRankHist'));
+    chartTipRanks.data = values;
+    RGraph.Redraw();
+}
+function updateRankHistory4Chart(scope) {
+    console.log('updateRankHistory4Chart');
+    var colors = ['red', 'blue', 'green', 'orange'];
+    var nrLines = scope.tippersSelected.length;
+    var values = [];
+    angular.forEach(scope.tippersSelected, function (tipper) {
+        var line = [];
+        var history = tipper.History;
+        var i = 0;
+        angular.forEach(tipper.History, function (data) {
+            if (i < scope.maxSeq) {
+                var point = [];
+                point.push(i);
+                point.push(data.R);
+                point.push(colors[values.length%colors.length]);
+                line.push(point);
+            }
+            i++;
+        });
+        try {
+            console.log('Line with color ' + colors[values.length%colors.length]);
+            values.push(line);
+        }
+        catch (exc) {
+            console.log(exc.message);
+        }
+    });
+    var nrCharts = values.length;
+    redrawChartScatter(values);
 }
 
 //------------------------------------------------------------------- App
@@ -121,6 +204,7 @@ tipControllers.controller('tipController', ['$scope', '$http', 'Tips',
                     var curr = angular.copy(scope.tippersSelected);
                     scope.tippersSelected = [];
                     scope.tippersSelected = curr;
+                    updateRankHistory4Chart(scope);
                 });
                 //$scope.maxSeq = 20;// <=====================================================
                 for (var i = 0; i < $scope.matches.length; i++) {
